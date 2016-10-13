@@ -8,7 +8,7 @@ class App{
 	protected $method = 'index';
 	protected $params = [];
 	public function __construct(){
-		//echo 'IT WORKS!';
+		//echo 'FUNCIOOOONAAAA';
 		$url = $this->parseURL();
 		if(file_exists('../app/controllers/'.$url[0].'.php')){
 			$this->controller = $url[0];
