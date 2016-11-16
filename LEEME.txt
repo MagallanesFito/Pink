@@ -8,14 +8,16 @@ Cabe destacar que esta documentación está escrita en español, pero el
 codigo (nombres de funciones,variables etc ) están en inglés, solo 
 por mero capricho y convención :)
 
+@author Adolfo E. Fragoso Magallanes
+
 /************************************************************************/
 INSERTAR BIBLIOTECAS EXTERNAS DE CSS/JavaScript EN EL PROYECTO
 	
 	Los archivos css/js externos (Como bootstrap, Semantic UI, JQuery etc) van en la carpeta 
 
-	/KaratsubaFramework/public/css para bibliotecas CSS
+	/public/css para bibliotecas CSS
 
-	o /KaratsubaFramework/public/js para archivos Javascript externos 
+	o /public/js para archivos Javascript externos 
 
 
 
