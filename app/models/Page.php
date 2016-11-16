@@ -6,6 +6,12 @@
   setCSS:
   	Recibe un arreglo de nombres de archivos de css, para utilizarlo solo 
   	colocas los nombres de las hojas de estilo separadas por comas.
+  setJS:
+  	Al igual que el metodo anterios, recibe un array de nombres (los cuales son archivos de js)
+  getContent:
+  	Crea un arreglo de componentes que deben ser insertados en la vista a la hora de ser llamada
+	la funcion regresa este arreglo y debe ser atrapada por un arreglo en el controlador
+  	
 
   BASE_FOOTER,BASE_CSS son constantes definidas en el archivo core/Config.php
   que indican la ruta base de css y del footer
@@ -43,6 +49,7 @@ class Page{
 	public function getContent(){
 		$content["Title"] = $this->title;
 		$content["CSS"] = $this->cssURL;
+		$content["JS"] = $this->jsURL;
 		return $content;
 	}
 	/*public function getFooter(){
