@@ -5,3 +5,5 @@ Soporte para perfiles de usuario
 
 ![alt tag](http://adolfopruebas.net76.net/pink/logo.png)
 
+Hecho con una base MVC que se nombró como Karatsuba Framework
+
