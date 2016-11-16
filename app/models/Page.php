@@ -20,7 +20,7 @@
 class Page{
 	private $title = "Pink | La red social para universitarios";
 	//private $footer = BASE_FOOTER;
-	private $baseCSS = BASE_CSS; //for debug
+	private $baseCSS = BASE_CSS; 
 	private $baseJS = BASE_JS;
 	private $cssURL;
 	private $jsURL;
