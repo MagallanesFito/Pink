@@ -4,17 +4,19 @@
 Controla la estructura del programa
 */
 class App{
-	protected $controller = 'home';
-	protected $method = 'index';
+	protected $controller = 'home'; //default controller
+	protected $method = 'index'; //default method in home controller
 	protected $params = [];
 	public function __construct(){
-		//echo 'FUNCIOOOONAAAA';
+		//echo $_SERVER['REQUEST_URI'];
 		$url = $this->parseURL();
-		if(file_exists('../app/controllers/'.$url[0].'.php')){
+		if(file_exists('app/controllers/'.$url[0].'.php')){
+			//echo "genial";
 			$this->controller = $url[0];
 			unset($url[0]);
 		}
-		require_once('../app/controllers/'.$this->controller.'.php');
+		//require_once('../app/controllers/'.$this->controller.'.php');
+		require_once('app/controllers/'.$this->controller.'.php');
 		$this->controller = new $this->controller;
 
 		if(isset($url[1])){

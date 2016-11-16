@@ -1,11 +1,14 @@
 <?php
 class Home extends Controller{
 	
-	public function index($name = "Anonimo"){
-		$user = $this->model('User');
-		$user->name = $name;
+	public function index(){
+		$Pagina = $this->model('Page'); //models/Page.php
+		$Pagina->setCSS(["styles"]);
 
-		$this->view('home/index',['name' => $user->name]);
+		$elementos = $Pagina->getContent();
+
+		$this->view('home/index',$elementos);
 	}
+
 }
 ?>
