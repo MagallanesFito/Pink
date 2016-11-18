@@ -11,7 +11,7 @@ class App{
 		//echo $_SERVER['REQUEST_URI'];
 		$url = $this->parseURL();
 		if(file_exists('app/controllers/'.$url[0].'.php')){
-			//echo "genial";
+			//echo "por fin funciona esta wea";
 			$this->controller = $url[0];
 			unset($url[0]);
 		}

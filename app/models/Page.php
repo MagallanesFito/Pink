@@ -12,17 +12,16 @@
 
 */
 class Page{
-	private $title = "Pink | La red social para universitarios";
+	private $title;
+	private $cssURL;
+	private $jsURL;
 	//private $footer = BASE_FOOTER;
 	private $baseCSS = BASE_CSS; //for debug
 	private $baseJS = BASE_JS;
-	private $cssURL;
-	private $jsURL;
+	
 
 	public function setTitle($titulo){
-		if($titulo !== ""){
-			$this->title = $titulo;
-		}
+		$this->title = $titulo;
 	}
 	/*public function getTitle(){
 		return $this->title;
@@ -43,6 +42,7 @@ class Page{
 	public function getContent(){
 		$content["Title"] = $this->title;
 		$content["CSS"] = $this->cssURL;
+		$content["JS"] = $this->jsURL;
 		return $content;
 	}
 	/*public function getFooter(){

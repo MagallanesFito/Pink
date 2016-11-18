@@ -2,12 +2,13 @@
 class Home extends Controller{
 	
 	public function index(){
-		$Pagina = $this->model('Page'); //models/Page.php
+		/*$Pagina = $this->model('Page'); //models/Page.php
 		$Pagina->setCSS(["styles"]);
 
 		$elementos = $Pagina->getContent();
 
-		$this->view('home/index',$elementos);
+		$this->view('home/index',$elementos);*/
+		$this->loadPage("Pink | La red social para universitarios",["styles"],[],"home/index");
 	}
 
 }
