@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
 	<title><?php echo $data["Title"]; ?></title>
 	<?php echo $data["CSS"];?>
