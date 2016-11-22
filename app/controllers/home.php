@@ -8,7 +8,9 @@ class Home extends Controller{
 		$elementos = $Pagina->getContent();
 
 		$this->view('home/index',$elementos);*/
-		$this->loadPage("Pink | La red social para universitarios",["styles"],[],"home/index");
+		$this->loadPage("Pink | La red social para universitarios",
+			["styles","semantic","semantic.min"],
+			["jquery-3.1.1.min"],"home/index");
 	}
 
 }

@@ -6,6 +6,7 @@ class Sign{
 	//VARIABLES TEMPORALES PARA PRUEBAS, SE UTILIZAN CREDENCIALES PARA CONEXION A BASE DE DATOS
 	private $username = "Admin";
 	private $password = "123456";
+	private $id = "159";
 	public function login($user,$password){
 		//$this->limpiarDatos($user,$password);
 		/*
@@ -13,7 +14,7 @@ class Sign{
 		*/
 		if($user == $this->username && $password==$this->password){
 			$base = BASE_URL;
-			header("Location: " . $base . "profile");
+			header("Location: " . $base . "profile/".$this->id);
 		}
 		else{
 			echo "DATOS NO VALIDOS";

@@ -10,7 +10,14 @@ class Login extends Controller{
 		$Pagina->setCSS(["styles"]);
 		$elementos = $Pagina->getContent();
 		$this->view("login/index",$elementos);*/
-		$this->loadPage("Iniciar sesion en Pink!", ["styles"] ,[],"login/index");
+
+		//utilizando el constructor de ls superclase
+		//parent::__construct("Iniciar sesion en Pink!", ["styles"] ,["jquery-3.1.1.min"],"login/index");
+
+
+		$this->loadPage("Iniciar sesion en Pink!", 
+			["styles","semantic","semantic.min"] ,
+			["jquery-3.1.1.min"],"login/index");
 	}
 	public function iniciar(){
 		$usuario = $_POST['username'];

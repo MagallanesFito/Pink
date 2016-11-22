@@ -4,6 +4,10 @@ Esta clase será la super clase que dará soporte a las demás clases creadas.
 */
 
 class Controller{
+	//FOR TESTING
+	/*public function __construct($Title,$CSS = [],$JS = [],$view){
+		$this->loadPage($Title,$CSS,$JS,$view);
+	}*/
 	protected function model($model){
 		require_once('app/models/'.$model.'.php');
 		return new $model;

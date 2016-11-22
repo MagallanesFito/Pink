@@ -1,3 +1,38 @@
-*{
-	font-family: Helvetica;
+body{
+	margin-top: 20px;
 }
+#botonEnviar:hover{
+	color:#2185D0;
+	background-color : white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2185D0; 
+}
+#botonRegistro:hover{
+	color:#21BA45;
+	background-color : white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #21BA45; 
+}
+#titulo{
+	font-size: 50px;
+}
+.inicio{
+    background: url('../img/6.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+.centrado{
+	position: absolute;
+		top:50%;
+		left:50%;
+		width:400px;
+		margin-left:-200px;
+		height:300px;
+		margin-top:-200px;
+		padding:5px;
+}
+

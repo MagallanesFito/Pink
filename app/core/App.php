@@ -21,11 +21,8 @@ class App{
 		 si no se especifica se llama al que está por defecto (home)
 		*/
 		if(file_exists('app/controllers/'.$url[0].'.php')){
-<<<<<<< HEAD
 			//echo "por fin funciona esta wea";
-=======
 			//echo "FUNCIONAAAA";
->>>>>>> origin/master
 			$this->controller = $url[0];
 			unset($url[0]);
 		}
