@@ -8,11 +8,14 @@ class Controller{
 	/*public function __construct($Title,$CSS = [],$JS = [],$view){
 		$this->loadPage($Title,$CSS,$JS,$view);
 	}*/
-	protected function model($model){
+
+	//protected
+	private function model($model){
 		require_once('app/models/'.$model.'.php');
 		return new $model;
 	}
-	protected function view($view,$data = []){
+	//protected
+	private function view($view,$data = []){
 		require_once('app/views/'.$view.'.php');
 	}
 	protected function loadPage($title,$CSS = [],$JS = [],$vista){
@@ -22,6 +25,11 @@ class Controller{
 		$Pagina->setJS($JS);
 		$elementos = $Pagina->getContent();
 		$this->view($vista,$elementos);
+	}
+	//Conexion a base de datos de PRUEBA	
+	protected function connectToDatabase(){
+		$Con = $this->model("Db");
+		return $Con; 
 	}
 }
 
